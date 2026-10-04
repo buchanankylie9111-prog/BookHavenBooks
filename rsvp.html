@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Event RSVP | BookHaven Bookstore</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-row">
+    <a class="brand" href="BookHavenBookstore.html" aria-label="BookHaven Bookstore home">
+      <img class="logo" src="images/bookhaven-logo.png" alt="BookHaven Bookstore logo">
+      <span>BookHaven Bookstore</span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="nav-menu" aria-label="Main navigation">
+    <a href="BookHavenBookstore.html">Home</a>
+    <a href="BookHavenBookstoreShop.html">Shop</a>
+    <a href="BookHavenBookStoreAbout.html">About</a>
+    <a href="BookHavenBookstoreEvents.html" class="active">Events</a>
+  </nav>
+</header>
+
+<main>
+  <h1 class="page-title">Event RSVP</h1>
+  <section class="rsvp-content">
+    <a class="btn secondary rsvp-back" href="BookHavenBookstoreEvents.html">&larr; Back to events</a>
+    <div class="rsvp-event-details" id="rsvp-event-details">
+      <h2 id="rsvp-event-name">Loading event...</h2>
+      <p id="rsvp-event-description"></p>
+      <dl class="rsvp-event-meta">
+        <dt>Date</dt><dd id="rsvp-event-date"></dd>
+        <dt>Time</dt><dd id="rsvp-event-time"></dd>
+        <dt>Location</dt><dd id="rsvp-event-venue"></dd>
+      </dl>
+    </div>
+    <form class="rsvp-form" id="event-rsvp-form">
+      <label for="rsvp-name">Name
+        <input id="rsvp-name" name="name" type="text" autocomplete="name" required>
+      </label>
+      <label for="rsvp-email">Email
+        <input id="rsvp-email" name="email" type="email" autocomplete="email" required>
+      </label>
+      <button class="btn" type="submit">Confirm RSVP</button>
+    </form>
+    <p class="rsvp-event-error" id="rsvp-event-error" hidden>
+      <a class="btn secondary" href="BookHavenBookstoreEvents.html">Back to events</a>
+    </p>
+  </section>
+</main>
+
+<dialog class="rsvp-confirmation" id="rsvp-confirmation" aria-labelledby="rsvp-confirmation-title">
+  <h2 id="rsvp-confirmation-title">You're RSVP'd!</h2>
+  <p id="rsvp-confirmation-text"></p>
+  <a class="btn" href="BookHavenBookstore.html">Back to homepage</a>
+</dialog>
+
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <a href="BookHavenBookstore.html">⌂ Home</a>
+  <a href="BookHavenBookstoreShop.html">▣ Shop</a>
+  <a href="BookHavenBookStoreAbout.html">● About</a>
+  <a href="BookHavenBookstoreEvents.html" class="active">★ Events</a>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>

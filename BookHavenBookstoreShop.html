@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BookHaven Bookstore | Catalogue</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+
+<header class="site-header">
+  <div class="header-row">
+    <a class="brand" href="BookHavenBookstore.html" aria-label="BookHaven Bookstore home">
+      <img class="logo" src="images/bookhaven-logo.png" alt="BookHaven Bookstore logo">
+      <span>BookHaven Bookstore</span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="nav-menu" aria-label="Main navigation">
+    <a href="BookHavenBookstore.html" class="">Home</a>
+<a href="BookHavenBookstoreShop.html" class="active">Shop</a>
+<a href="BookHavenBookStoreAbout.html" class="">About</a>
+<a href="BookHavenBookstoreEvents.html" class="">Events</a>
+  </nav>
+</header>
+
+<main>
+<h1 class="page-title">Catalogue</h1>
+<div class="cart-toolbar">
+  <button class="cart-toggle" type="button" aria-expanded="false" aria-controls="shopping-cart">
+    Cart <span class="cart-count" aria-live="polite">0</span>
+  </button>
+</div>
+<section class="shopping-cart" id="shopping-cart" aria-labelledby="cart-title" hidden>
+  <h2 id="cart-title">Your cart</h2>
+  <div class="cart-items" aria-live="polite"></div>
+  <p class="cart-total">Total <strong>$0.00</strong></p>
+</section>
+<form class="search-wrap" id="catalogue-search-form" role="search">
+  <input id="catalogue-search" type="search" placeholder="Search titles, descriptions, genres..." aria-label="Search catalogue">
+  <button type="submit" aria-label="Search catalogue">⌕</button>
+</form>
+<div class="filter-row" aria-label="Book filters">
+  <button class="filter-chip active" type="button" data-genre="all" aria-pressed="true">All</button>
+  <button class="filter-chip" type="button" data-genre="nonfiction" aria-pressed="false">Nonfiction</button>
+  <button class="filter-chip" type="button" data-genre="fiction" aria-pressed="false">Fiction</button>
+  <button class="filter-chip" type="button" data-genre="children" aria-pressed="false">Children</button>
+  <button class="filter-chip" type="button" data-genre="history" aria-pressed="false">History</button>
+  <button class="filter-chip" type="button" data-genre="fantasy" aria-pressed="false">Fantasy</button>
+  <button class="filter-chip" type="button" data-genre="romance" aria-pressed="false">Romance</button>
+</div>
+<p class="genre-status" aria-live="polite"></p>
+
+<section class="catalogue-grid" aria-label="Books">
+  <article class="catalogue-card" id="brie-mine-4ever" tabindex="0" data-genres="fiction romance children" data-price-cents="1899"><div class="product-media"><img class="product-image" src="images/Client3_Book1.png" alt="Brie Mine 4Ever book cover"><p class="product-description">A book for cheese lovers.</p></div><h3>Brie Mine 4Ever</h3><p class="book-price">$18.99</p><button type="button" data-add-to-cart aria-label="Add Brie Mine 4Ever to cart">+</button></article>
+  <article class="catalogue-card" id="glory-riders" tabindex="0" data-genres="fiction history" data-price-cents="1499"><div class="product-media"><img class="product-image" src="images/Client3_Book2.png" alt="Glory Riders book cover"><p class="product-description">A book about bikers.</p></div><h3>Glory Riders</h3><p class="book-price">$14.99</p><button type="button" data-add-to-cart aria-label="Add Glory Riders to cart">+</button></article>
+  <article class="catalogue-card" id="sorcerers-shadowed-chronicles" tabindex="0" data-genres="fiction fantasy" data-price-cents="2199"><div class="product-media"><img class="product-image" src="images/Client3_Book3.png" alt="Sorcerer's Shadowed Chronicles book cover"><p class="product-description">A fantasy book.</p></div><h3>Sorcerer's Shadowed Chronicles</h3><p class="book-price">$21.99</p><button type="button" data-add-to-cart aria-label="Add Sorcerer's Shadowed Chronicles to cart">+</button></article>
+  <article class="catalogue-card" tabindex="0" data-genres="nonfiction" data-price-cents="899"><div class="product-media"><img class="product-image" src="images/Client3_Magazine1.png" alt="Ball magazine cover"><p class="product-description">A magazine about pickleball.</p></div><h3>Ball</h3><p class="book-price">$8.99</p><button type="button" data-add-to-cart aria-label="Add Ball to cart">+</button></article>
+  <article class="catalogue-card" tabindex="0" data-genres="nonfiction" data-price-cents="899"><div class="product-media"><img class="product-image" src="images/Client3_Magazine2.png" alt="Travel magazine cover"><p class="product-description">A magazine for travelers.</p></div><h3>Travel</h3><p class="book-price">$8.99</p><button type="button" data-add-to-cart aria-label="Add Travel to cart">+</button></article>
+  <article class="catalogue-card" tabindex="0" data-genres="nonfiction" data-price-cents="899"><div class="product-media"><img class="product-image" src="images/Client3_Magazine3.png" alt="Eat magazine cover"><p class="product-description">A magazine for foodies.</p></div><h3>Eat</h3><p class="book-price">$8.99</p><button type="button" data-add-to-cart aria-label="Add Eat to cart">+</button></article>
+  <article class="catalogue-card" tabindex="0" data-price-cents="1299"><div class="product-media"><img class="product-image" src="images/Client3_ToteBag.png" alt="Book Haven canvas tote bag"><p class="product-description">A canvas tote bag with black lettering that says “ALL I DO IS READ READ READ”.</p></div><h3>Book Haven Tote Bag</h3><p class="book-price">$12.99</p><button type="button" data-add-to-cart aria-label="Add Book Haven Tote Bag to cart">+</button></article>
+  <article class="catalogue-card" tabindex="0" data-price-cents="699"><div class="product-media"><img class="product-image" src="images/Client3_Notebook.png" alt="Book Haven Bookstore notebook"><p class="product-description">A notebook with text on the cover that says “Book Haven Bookstore”.</p></div><h3>Book Haven Notebook</h3><p class="book-price">$6.99</p><button type="button" data-add-to-cart aria-label="Add Book Haven Notebook to cart">+</button></article>
+  <article class="catalogue-card" tabindex="0" data-price-cents="499"><div class="product-media"><img class="product-image" src="images/Client3_Stickers.png" alt="Set of four Book Haven Bookstore stickers"><p class="product-description">A set of four Book Haven Bookstore stickers that promote reading.</p></div><h3>Book Haven Stickers</h3><p class="book-price">$4.99</p><button type="button" data-add-to-cart aria-label="Add Book Haven Stickers to cart">+</button></article>
+</section>
+<button class="load-more">Load more</button>
+</main>
+<nav class="bottom-nav" aria-label="Mobile navigation"><a href="BookHavenBookstore.html" class="">⌂ Home</a><a href="BookHavenBookstoreShop.html" class="active">▣ Shop</a><a href="BookHavenBookStoreAbout.html" class="">● About</a><a href="BookHavenBookstoreEvents.html" class="">★ Events</a></nav>
+<script src="script.js"></script>
+</body></html>
